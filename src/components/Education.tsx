@@ -1,13 +1,10 @@
-import React from "react";
-
-const Education: React.FC = () => {
+// src/components/Education.tsx
+const Education = () => {
   return (
-    <section>
-      <h2>تحصیلات</h2>
-      <ul>
-        <li>
-          <strong>کارشناسی نرم‌افزار</strong> - دانشگاه تهران (2016 - 2020)
-        </li>
+    <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6">
+      <h2 className="text-xl font-semibold mb-2">Education</h2>
+      <ul className="list-disc list-inside">
+        <li>کارشناسی نرم‌افزار - دانشگاه Z</li>
       </ul>
     </section>
   );

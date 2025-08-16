@@ -1,11 +1,9 @@
-import React from "react";
-
-const Profile: React.FC = () => {
+// src/components/Profile.tsx
+const Profile = () => {
   return (
-    <section>
-      <h1>علی شبانی</h1>
-      <p>Frontend Developer | React & TypeScript | Freelancer</p>
-      <p>تهران، ایران | <a href="mailto:alishabani@example.com">alishabani@example.com</a></p>
+    <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6">
+      <h2 className="text-xl font-semibold mb-2">Profile</h2>
+      <p>من یک توسعه‌دهنده فرانت‌اند هستم که با React و TypeScript کار می‌کنم.</p>
     </section>
   );
 };

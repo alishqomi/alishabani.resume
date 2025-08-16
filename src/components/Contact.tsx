@@ -1,14 +1,10 @@
-import React from "react";
-
-const Contact: React.FC = () => {
+// src/components/Contact.tsx
+const Contact = () => {
   return (
-    <section>
-      <h2>تماس</h2>
-      <ul>
-        <li>ایمیل: <a href="mailto:alishabani@example.com">alishabani@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/alishqomi" target="_blank">alishqomi</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/alishabani/" target="_blank">Ali Shabani</a></li>
-      </ul>
+    <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6">
+      <h2 className="text-xl font-semibold mb-2">Contact</h2>
+      <p>ایمیل: ali@example.com</p>
+      <p>تلفن: 0912-XXX-XXXX</p>
     </section>
   );
 };

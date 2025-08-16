@@ -1,18 +1,11 @@
-import React from "react";
-
-const Experience: React.FC = () => {
+// src/components/Experience.tsx
+const Experience = () => {
   return (
-    <section>
-      <h2>تجربه کاری</h2>
-      <ul>
-        <li>
-          <strong>Frontend Developer</strong> - شرکت فناوری نوین (2022 - حالا)
-          <p>توسعه اپلیکیشن‌های React با TypeScript و Vite، طراحی رابط کاربری مدرن و ریسپانسیو.</p>
-        </li>
-        <li>
-          <strong>Junior Developer</strong> - استارتاپ دیجیتال (2020 - 2022)
-          <p>ساخت صفحات SPA و بهینه‌سازی عملکرد اپلیکیشن‌ها.</p>
-        </li>
+    <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6">
+      <h2 className="text-xl font-semibold mb-2">Experience</h2>
+      <ul className="list-disc list-inside">
+        <li>توسعه‌دهنده فرانت‌اند در شرکت X</li>
+        <li>کارآموزی در شرکت Y</li>
       </ul>
     </section>
   );

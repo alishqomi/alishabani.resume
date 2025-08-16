@@ -1,36 +1,44 @@
-import React from 'react';
-import './App.css';
+// src/App.tsx
+import React from "react";
+import Header from "./components/Header";
+import Profile from "./components/Profile";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
+import Languages from "./components/Languages";
 
 const App: React.FC = () => {
   return (
-    <div className="resume-container">
-      <h1>علی شبانی</h1>
-      <h3>توسعه‌دهنده فرانت‌اند | React & WordPress</h3>
+    <div className="bg-gray-100 dark:bg-gray-900 min-h-screen">
+      {/* Header */}
+      <Header />
 
-      <section>
-        <h2>مهارت‌ها</h2>
-        <ul>
-          <li>React.js, HTML, CSS, JavaScript</li>
-          <li>WordPress Theme & Plugin Development</li>
-          <li>Responsive & RTL Design</li>
-        </ul>
-      </section>
+      <div className="container mx-auto px-4 py-8">
+        {/* Profile */}
+        <Profile />
 
-      <section>
-        <h2>نمونه‌کارها</h2>
-        <ul>
-          <li>Landing Page: <a href="#">مشاهده</a></li>
-          <li>Todo App: <a href="#">مشاهده</a></li>
-        </ul>
-      </section>
+        {/* Skills */}
+        <Skills />
 
-      <section>
-        <h2>تماس</h2>
-        <p>Email: ali@example.com</p>
-        <p>Tel: 0912xxxxxxx</p>
-      </section>
+        {/* Projects */}
+        <Projects />
+
+        {/* Experience */}
+        <Experience />
+
+        {/* Education */}
+        <Education />
+
+        {/* Languages */}
+        <Languages />
+
+        {/* Contact */}
+        <Contact />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
