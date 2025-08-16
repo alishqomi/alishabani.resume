@@ -6,7 +6,7 @@
 🚀 پیش‌نمایش آنلاین
 
 👉 نمایش وبسایت
-https://chatgpt.com/c/68a0a86c-cf94-8325-b465-4c99409d67a4
+https://alishqomi.github.io/alishabani.resume/
 
 ⚡ ویژگی‌ها
 
