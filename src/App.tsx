@@ -1,27 +1,31 @@
+import React from "react";
+import "./App.css";
 import Header from "./components/Header";
-import PersonalInfo from "./components/profile";
+import Profile from "./components/profile";
+import About from "./components/About";
 import Skills from "./components/Skills";
-import Education from "./components/Education";
 import Experience from "./components/Experience";
-import Languages from "./components/Languages";
+import Education from "./components/Education";
 import Projects from "./components/Projects";
+import Languages from "./components/Languages";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div className="max-w-5xl mx-auto p-4">
-      <Header />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-        <PersonalInfo />
+    <div className="app">
+      <div className="resume-container">
+        <Header />
+        <Profile />
+        <About />
         <Skills />
-        <Education />
         <Experience />
-        <Languages />
+        <Education />
         <Projects />
+        <Languages />
         <Contact />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

@@ -1,37 +1,22 @@
+import React from "react";
 
-const Experience = () => {
-  const experiences = [
-    {
-      title: "Front End Developer (React.js)",
-      company: "سازمان خصوصی",
-      duration: "دی ۱۴۰۳ - اکنون",
-    },
-    {
-      title: "کارشناس پایگاه داده‌های یکپارچه",
-      company: "نیروی هوایی ارتش ایران",
-      duration: "شهریور ۱۴۰۱ - اکنون",
-    },
-    {
-      title: "Back-End Developer (Python) / WordPress",
-      company: "هیواتک",
-      duration: "شهریور ۱۴۰۲ - اسفند ۱۴۰۲",
-    },
-  ];
+const experiences = [
+  { role: "Front End Developer (React.js)", company: "سازمان خصوصی", date: "دی ۱۴۰۳ تاکنون" },
+  { role: "کارشناس پایگاه داده های یکپارچه", company: "نیروی هوایی ارتش ایران", date: "شهریور ۱۴۰۱ تاکنون" },
+  { role: "Back-End Developer (Python) / WordPress/ automation plugins", company: "هیواتک", date: "شهریور ۱۴۰۲ تا اسفند ۱۴۰۲" },
+];
 
-  return (
-    <section className="bg-white shadow-md rounded-xl p-6 mt-6">
-      <h2 className="text-2xl font-semibold mb-4">سوابق شغلی</h2>
-      <ul className="space-y-4">
-        {experiences.map((exp, index) => (
-          <li key={index} className="border-l-4 border-blue-600 pl-4">
-            <p className="font-semibold">{exp.title}</p>
-            <p className="text-gray-600">{exp.company}</p>
-            <p className="text-gray-400 text-sm">{exp.duration}</p>
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-};
+const Experience: React.FC = () => (
+  <section>
+    <h2>سوابق شغلی / Experience</h2>
+    {experiences.map((exp) => (
+      <div className="card" key={exp.role}>
+        <h3>{exp.role}</h3>
+        <p>{exp.company}</p>
+        <p>{exp.date}</p>
+      </div>
+    ))}
+  </section>
+);
 
 export default Experience;

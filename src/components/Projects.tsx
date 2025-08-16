@@ -1,11 +1,20 @@
+import React from "react";
 
-const Projects = () => {
-  return (
-    <section className="bg-white shadow-md rounded-xl p-6 mt-6">
-      <h2 className="text-2xl font-semibold mb-4">پروژه‌ها</h2>
-      <p>در حال حاضر پروژه‌های خاص اضافه نشده‌اند.</p>
-    </section>
-  );
-};
+const projects = [
+  { title: "پروژه نمونه ۱", description: "توضیح کوتاه پروژه نمونه ۱" },
+  { title: "پروژه نمونه ۲", description: "توضیح کوتاه پروژه نمونه ۲" },
+];
+
+const Projects: React.FC = () => (
+  <section>
+    <h2>پروژه‌ها / Projects</h2>
+    {projects.map((proj) => (
+      <div className="card" key={proj.title}>
+        <h3>{proj.title}</h3>
+        <p>{proj.description}</p>
+      </div>
+    ))}
+  </section>
+);
 
 export default Projects;

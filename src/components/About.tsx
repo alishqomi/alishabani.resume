@@ -1,17 +1,12 @@
+import React from "react";
 
-const PersonalInfo = () => {
-  return (
-    <section className="p-6 bg-gray-100 rounded-md my-4">
-      <h2 className="text-xl font-semibold mb-2">اطلاعات شخصی</h2>
-      <ul className="space-y-1">
-        <li>جنسیت: مرد</li>
-        <li>وضعیت تاهل: مجرد</li>
-        <li>نظام وظیفه: انجام شده</li>
-        <li>تاریخ تولد: ۱۳۷۹/۰۴/۲۳</li>
-        <li>حقوق درخواستی: ۲۰ - ۲۵ میلیون تومان</li>
-      </ul>
-    </section>
-  );
-};
+const About: React.FC = () => (
+  <section>
+    <h2>درباره من / About Me</h2>
+    <p>
+      توسعه‌دهنده فرانت‌اند با تخصص در ری‌اکت و تایپ‌اسکریپت، ماهر در طراحی اپلیکیشن‌های وب پویا، ریسپانسیو و کاربرمحور. تجربه قوی در پیاده‌سازی رابط‌های کاربری مدرن با کتابخانه‌هایی مثل Recharts، PrimeReact، MUI و Ant Design. مسلط به ادغام APIهای RESTful، بهینه‌سازی عملکرد و تطبیق با کدهای موجود.
+    </p>
+  </section>
+);
 
-export default PersonalInfo;
+export default About;

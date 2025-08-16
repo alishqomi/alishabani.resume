@@ -1,15 +1,20 @@
+import React from "react";
 
-const Contact = () => {
-  return (
-    <section className="bg-white shadow-md rounded-xl p-6 mt-6">
-      <h2 className="text-2xl font-semibold mb-4">راه‌های ارتباطی</h2>
-      <ul className="space-y-2">
-        <li>GitHub: github.com/alishqomi</li>
-        <li>LinkedIn: linkedin.com/in/alishqomi</li>
-        <li>Email: your-email@example.com</li>
-      </ul>
-    </section>
-  );
-};
+const contacts = [
+  { type: "Email", value: "ali@example.com", link: "mailto:ali@example.com" },
+  { type: "LinkedIn", value: "Ali Shabani", link: "https://linkedin.com" },
+  { type: "GitHub", value: "alishqomi", link: "https://github.com/alishqomi" },
+];
+
+const Contact: React.FC = () => (
+  <section>
+    <h2>تماس / Contact</h2>
+    {contacts.map((c) => (
+      <a key={c.type} href={c.link} className="contact-link" target="_blank" rel="noreferrer">
+        {c.value}
+      </a>
+    ))}
+  </section>
+);
 
 export default Contact;

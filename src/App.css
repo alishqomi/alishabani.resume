@@ -1,49 +1,10 @@
+/* ریست و فونت */
 body {
   margin: 0;
-  font-family: 'Vazir', sans-serif;
+  font-family: 'Vazir', sans-serif, sans-serif;
   background-color: #f3f4f6;
   color: #1f2937;
-}
-
-.app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.resume-container {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 16px;
-  max-width: 800px;
-  width: 95%;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: #111827;
-}
-
-h2 {
-  color: #111827;
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-p, li {
-  line-height: 1.6;
-}
-
-ul {
-  padding-left: 1.2rem;
+  direction: rtl; /* فارسی */
 }
 
 a {
@@ -53,4 +14,124 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* کانتینر اصلی */
+.app {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.resume-container {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  max-width: 900px;
+  width: 95%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* تیترها */
+h1, h2, h3 {
+  margin: 0;
+  color: #111827;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+/* بخش‌ها */
+section {
+  margin-bottom: 2rem;
+}
+
+/* پاراگراف و لیست */
+p, li {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+/* کارت‌ها برای تجربه، پروژه و مهارت */
+.card {
+  background-color: #f9fafb;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+}
+
+/* گرید دو ستونه برای مهارت‌ها و اطلاعات شخصی */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.skill-badge {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  margin: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.language-badge {
+  display: inline-block;
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  margin: 0.2rem;
+  font-size: 0.9rem;
+}
+
+/* استایل لینک شبکه‌ها و تماس */
+.contact-link {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: #2563eb;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* فوتر */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 2rem;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-container {
+    padding: 1.5rem;
+  }
 }
