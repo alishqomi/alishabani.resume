@@ -20,21 +20,6 @@ https://alishqomi.github.io/alishabani.resume/
 
 قابلیت دیپلوی سریع روی GitHub Pages
 
-📂 ساختار پروژه
-alishabani.resume/
-├── public/               # فایل‌های عمومی
-├── src/
-│   ├── assets/           # تصاویر و آیکون‌ها
-│   ├── components/       # کامپوننت‌های UI (Header, Profile, Footer, ...)
-│   ├── pages/            # صفحات (Home, About, Contact)
-│   ├── styles/           # استایل‌ها (CSS)
-│   ├── App.tsx           # روت اصلی اپلیکیشن
-│   ├── main.tsx          # نقطه شروع برنامه
-│   └── index.css         # استایل‌های عمومی
-├── package.json
-├── vite.config.ts
-└── README.md
-
 🛠 نصب و اجرا
 
 برای اجرای پروژه به Node.js نیاز داری.
@@ -42,6 +27,7 @@ alishabani.resume/
 1️⃣ کلون پروژه
 
 git clone https://github.com/alishabani/alishabani.resume.git
+
 cd alishabani.resume
 
 
@@ -67,9 +53,5 @@ npm run deploy
 📧 تماس با من
 
 ایمیل: ali.shabani@email.com
-
-لینکدین: linkedin.com/in/alishabani
-
-گیت‌هاب: github.com/alishabani
 
 🔥 اگر این پروژه برات مفید بود، خوشحال میشم ⭐️ استار بدی!
