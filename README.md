@@ -1,69 +1,74 @@
-# React + TypeScript + Vite
+📝 Ali Shabani - Resume Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+این پروژه یک وب‌اپلیکیشن رزومه شخصی است که با React + Vite ساخته شده.
+هدف این پروژه نمایش مهارت‌ها، پروژه‌ها و اطلاعات تماس من به شکلی مدرن و ساده است.
 
-Currently, two official plugins are available:
+🚀 پیش‌نمایش آنلاین
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 نمایش وبسایت
+https://chatgpt.com/c/68a0a86c-cf94-8325-b465-4c99409d67a4
+⚡ ویژگی‌ها
 
-## Expanding the ESLint configuration
+ساخته شده با React + Vite (سریع و بهینه)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+طراحی ماژولار با کامپوننت‌های جداگانه
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+استایل‌دهی با CSS Modules (بدون Tailwind)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+ریسپانسیو برای موبایل، تبلت و دسکتاپ
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+قابلیت دیپلوی سریع روی GitHub Pages
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+📂 ساختار پروژه
+alishabani.resume/
+├── public/               # فایل‌های عمومی
+├── src/
+│   ├── assets/           # تصاویر و آیکون‌ها
+│   ├── components/       # کامپوننت‌های UI (Header, Profile, Footer, ...)
+│   ├── pages/            # صفحات (Home, About, Contact)
+│   ├── styles/           # استایل‌ها (CSS)
+│   ├── App.tsx           # روت اصلی اپلیکیشن
+│   ├── main.tsx          # نقطه شروع برنامه
+│   └── index.css         # استایل‌های عمومی
+├── package.json
+├── vite.config.ts
+└── README.md
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🛠 نصب و اجرا
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+برای اجرای پروژه به Node.js نیاز داری.
+
+1️⃣ کلون پروژه
+
+git clone https://github.com/alishabani/alishabani.resume.git
+cd alishabani.resume
+
+
+2️⃣ نصب پکیج‌ها
+
+npm install
+
+
+3️⃣ اجرای لوکال
+
+npm run dev
+
+
+4️⃣ ساخت نسخه Production
+
+npm run build
+
+
+5️⃣ دیپلوی روی GitHub Pages
+
+npm run deploy
+
+📧 تماس با من
+
+ایمیل: ali.shabani@email.com
+
+لینکدین: linkedin.com/in/alishabani
+
+گیت‌هاب: github.com/alishabani
+
+🔥 اگر این پروژه برات مفید بود، خوشحال میشم ⭐️ استار بدی!
