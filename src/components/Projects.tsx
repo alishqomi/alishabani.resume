@@ -1,12 +1,9 @@
-// src/components/Projects.tsx
+
 const Projects = () => {
   return (
-    <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6">
-      <h2 className="text-xl font-semibold mb-2">Projects</h2>
-      <ul className="list-disc list-inside">
-        <li>پورتفولیوی شخصی</li>
-        <li>اپلیکیشن مدیریت وظایف</li>
-      </ul>
+    <section className="bg-white shadow-md rounded-xl p-6 mt-6">
+      <h2 className="text-2xl font-semibold mb-4">پروژه‌ها</h2>
+      <p>در حال حاضر پروژه‌های خاص اضافه نشده‌اند.</p>
     </section>
   );
 };

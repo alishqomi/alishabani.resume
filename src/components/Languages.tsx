@@ -1,11 +1,10 @@
-// src/components/Languages.tsx
+
 const Languages = () => {
   return (
-    <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6">
-      <h2 className="text-xl font-semibold mb-2">Languages</h2>
-      <ul className="list-disc list-inside">
-        <li>فارسی - زبان مادری</li>
-        <li>انگلیسی - حرفه‌ای</li>
+    <section className="bg-white shadow-md rounded-xl p-6 mt-6">
+      <h2 className="text-2xl font-semibold mb-4">زبان‌ها</h2>
+      <ul className="space-y-2">
+        <li><span className="font-semibold">انگلیسی:</span> پیشرفته</li>
       </ul>
     </section>
   );
